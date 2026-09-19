@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "geopackwiz",
+	"version": "${version}",
+	"name": "GeoRail PackWiz",
+	"description": "Downloads the GeoRail resourcepack safely to be used on the GeoRail server.",
+	"authors": [
+		"JustNoone",
+		"Zbx1425"
+	],
+	"contact": {
+		"homepage": "https://georail.eu/",
+		"sources": "https://discord.gg/GVpTBF5EZj"
+	},
+	"license": "MIT license for Zbx1425 parts, ARR for original parts.",
+	"icon": "assets/geopackwiz/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"eu.justnoone.geopackwiz.GeoPackWiz"
+		],
+		"client": [
+			"eu.justnoone.geopackwiz.GeoPackWizClient"
+		]
+	},
+	"mixins": [
+		"geopackwiz.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}

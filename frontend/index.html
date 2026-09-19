@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoRail PackWiz — Resource Pack</title>
+    <link rel="icon" type="image/png" href="/icon.png" />
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="hero">
+        <h1>GeoRail <span>PackWiz</span></h1>
+        <p class="tagline">Encrypted, auto-updating resource pack delivery for the GeoRail server.</p>
+      </header>
+
+      <section class="card status" aria-live="polite">
+        <h2>Pack status</h2>
+        <dl id="status">
+          <div><dt>Files</dt><dd id="stat-files">…</dd></div>
+          <div><dt>Total size</dt><dd id="stat-size">…</dd></div>
+          <div><dt>Last updated</dt><dd id="stat-updated">…</dd></div>
+          <div><dt>Protocol</dt><dd id="stat-protocol">…</dd></div>
+        </dl>
+      </section>
+
+      <section class="card actions">
+        <a class="btn primary" href="/pack/latest.zip" id="download-btn">Download pack (.zip)</a>
+        <a class="btn" href="https://www.curseforge.com/minecraft/mc-mods/fabric-api" target="_blank" rel="noopener">Fabric API</a>
+      </section>
+
+      <section class="card install">
+        <h2>Install with the mod (recommended)</h2>
+        <ol>
+          <li>Install <strong>Fabric</strong> and <strong>Fabric API</strong> for Minecraft 1.20.1.</li>
+          <li>Install the <strong>GeoRail PackWiz</strong> mod into your <code>mods/</code> folder.</li>
+          <li>Open <code>config/geopackwiz.json</code> and set:
+            <pre>{
+  "remoteConfigUrl": "https://packwiz.justnoone.eu/client_config.json"
+}</pre>
+          </li>
+          <li>Join the GeoRail server — the pack downloads and updates itself automatically.</li>
+        </ol>
+        <p class="note">The pack is verified by SHA-1 on every update, so tampering is detected.</p>
+      </section>
+
+      <footer>GeoRail PackWiz · served over TLS from packwiz.justnoone.eu</footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

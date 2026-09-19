@@ -1,0 +1,20 @@
+{
+  "name": "geopackwiz-site",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Temporary frontend + pack server for GeoRail PackWiz (resourcepackupdater fork)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node server.mjs",
+    "serve": "npm run build && node server.mjs"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}

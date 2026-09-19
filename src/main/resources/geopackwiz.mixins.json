@@ -1,0 +1,21 @@
+{
+	"required": true,
+	"package": "eu.justnoone.geopackwiz.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"mixins": [
+	],
+	"client": [
+		"MinecraftMixin",
+		"OptionsScreenMixin",
+		"OptionsScreenAddButtonMixin",
+		"MultiPackResourceManagerMixin",
+		"BuiltInPackSourceMixin"
+	],
+
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
